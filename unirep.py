@@ -125,7 +125,7 @@ class mLSTMCell1900(tf.compat.v1.nn.rnn_cell.RNNCell):
         h = o * tf.tanh(c)
         return h, (c, h)
 
-class mLSTMCell(tf.nn.rnn_cell.RNNCell):
+class mLSTMCell(tf.compat.v1.nn.rnn_cell.RNNCell):
 
     def __init__(self,
                  num_units,
@@ -217,7 +217,7 @@ class mLSTMCell(tf.nn.rnn_cell.RNNCell):
         h = o * tf.tanh(c)
         return h, (c, h)
 
-class mLSTMCellStackNPY(tf.nn.rnn_cell.RNNCell):
+class mLSTMCellStackNPY(tf.compat.v1.nn.rnn_cell.RNNCell):
 
     def __init__(self,
                  num_units=256,
