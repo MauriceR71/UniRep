@@ -40,7 +40,7 @@ def initialize_uninitialized(sess):
 
 
 # Setup to initialize from the correctly named model files.
-class mLSTMCell1900(tf.nn.rnn_cell.RNNCell):
+class mLSTMCell1900(tf.compat.v1.nn.rnn_cell.RNNCell):
 
     def __init__(self,
                  num_units,
